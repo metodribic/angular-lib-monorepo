@@ -1,0 +1,23 @@
+{
+  "extends": "../tsconfig.json",
+  "angularCompilerOptions": {
+    "paths": {
+      "@my/lib": [ "../packages/my-lib/src/public_api.ts" ],
+      "@my/lib2": [ "../packages/my-lib2/src/public_api.ts" ]
+    }
+  },
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "module": "es2015",
+    "baseUrl": "",
+    "types": [],
+    "paths": {
+      "@my/lib": [ "../packages/my-lib/src/public_api.ts" ],
+      "@my/lib2": [ "../packages/my-lib2/src/public_api.ts" ]
+    }
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
+}
